@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-06-14T14:06:18.510Z'
-updated: '2025-06-14T14:06:18.944Z'
+created: '2025-06-14T14:31:11.335Z'
+updated: '2025-06-14T14:31:11.735Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -149,132 +149,132 @@ terms:
     description: Simultaneous Localization and Mappingの略で、移動体が未知環境において自己位置推定と環境地図作成を同時に行う技術。センサー（LiDAR、カメラ、IMUなど）から得られる情報を基に、自分がどこにいるかを推定しながら周囲の地図を構築する。自動運転車、お掃除ロボット、ドローン、AGV（無人搬送車）、AR/VRシステムなどで広く活用されている。Visual SLAM、LiDAR SLAM、RGB-D SLAMなど使用センサーにより分類される。ロボットや自律移動システムの基盤技術として重要。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:07:06.674Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:07:06.674Z'
   - term: クロック周波数
     description: CPUが動作するタイミングを決める基準信号の周波数のこと。Hz（ヘルツ）単位で表され、1秒間に何回クロック信号が発生するかを示す。現在のCPUでは数GHz（ギガヘルツ）が一般的で、クロック周波数が高いほど同じ時間内により多くの処理が可能となる。ただし、周波数だけでは性能は決まらず、アーキテクチャやコア数なども重要な要素となる。オーバークロックによって設計値以上の周波数で動作させることも可能だが、発熱や消費電力の増加に注意が必要。CPUの性能を示す代表的な指標の一つ。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:07:42.592Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:07:42.592Z'
   - term: レジスタリネーミング
     description: CPUにおいて、プログラム内でレジスタを再利用することによる不要な順序依存性を解消し、命令の並列実行を可能にする技術。論理レジスタを物理レジスタに動的に割り当て直すことで、データの依存関係がない命令を同時実行できるようになる。例えば、同じレジスタ名を使う異なる命令を、実際には別々の物理レジスタに割り当てることで、WAW（Write After Write）ハザードなどを回避する。現代の高性能CPUには欠かせない技術の一つで、アウトオブオーダー実行と組み合わせてCPUの性能向上に大きく貢献している。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:07:58.600Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:07:58.600Z'
   - term: パーセプトロン
     description: 1958年にローゼンブラットが考案した、最も基本的なニューラルネットワークの一種。複数の入力信号に重みを掛けて合計し、ある閾値を超えた場合に出力する単純な仕組みで、人間の脳神経細胞（ニューロン）の動作を模倣したもの。機械学習の基礎となっており、単純パーセプトロンは線形分離可能な問題しか解けないが、多層化することで複雑な問題も扱えるようになる。AND、OR、NOTなどの論理演算を実現でき、現在のディープラーニングの原点とも言える重要な概念。ニューラルネットワークの最小単位として理解される。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:12:39.257Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:12:39.257Z'
   - term: PWM制御
     description: パルス幅変調（Pulse Width Modulation）とも呼ばれる、オンとオフを高速で繰り返すことにより電力を制御する技術。一定周期内でオンの時間の割合（デューティ比）を変更することで、平均的な出力電圧を調整する。スイッチング方式のため効率が良く、モーター制御、LED調光、電源回路、インバーター制御などに広く使用される。アナログ的な電力制御と比べて発熱が少なく、デジタル制御しやすいという利点がある。マイコンから簡単に生成できるため、電子工作や組み込みシステムでよく利用される制御手法。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T14:23:15.661Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-14T14:23:15.661Z'
   - term: IPv4とIPv6
     description: インターネットプロトコル（IP）の2つの主要バージョン。IPv4は32ビットアドレスで約43億個のIPアドレスを提供するが、インターネットの急速な普及により枯渇問題が発生。IPv6は128ビットアドレスで約340澗個（事実上無限）のIPアドレスを提供し、枯渇問題を根本的に解決する。IPv6はIPv4より高いセキュリティ機能（IPSec必須）を持ち、IPoE接続により高速通信も可能。しかし互換性がないため、IPv4 over IPv6などの技術で移行を進めている。現在は両者が混在した状態でインターネットが運用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:25:36.249Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:25:36.249Z'
   - term: フリップフロップ
     description: デジタル回路において1ビットの情報を記憶する基本的な記憶素子。論理回路の組み合わせで構成され、2つの安定状態（0と1）を持ち、入力信号によって状態を切り替えることができる。RS、D、JK、Tの各種類があり、用途に応じて使い分けられる。クロック信号に同期して動作し、順序回路の基本要素として機能する。レジスタやカウンタ、メモリ回路の構成要素として広く使用され、コンピュータのCPUやメモリにも不可欠な技術。名前の由来は状態がパタッと切り替わる様子から「フリップフロップ」と名付けられた。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:27:55.287Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:27:55.287Z'
   - term: 半加算器
     description: 2進数の1桁同士の加算を行う基本的な論理回路。2つの入力ビット（AとB）を受け取り、和（Sum）と桁上がり（Carry）の2つを出力する。XOR回路で和を、AND回路で桁上がりを計算する構造となっている。下位桁からの桁上がりは考慮しないため、最下位桁の計算や単独の1ビット加算に使用される。複数桁の加算には半加算器と全加算器を組み合わせて加算回路を構成する。コンピュータの演算装置（ALU）の基本構成要素で、デジタル回路設計の基礎となる重要な回路。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:28:19.290Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:28:19.290Z'
   - term: 巡回セールスマン問題
     description: TSP（Traveling Salesman Problem）とも呼ばれる、組み合わせ最適化の代表的な問題。セールスマンが複数の都市をすべて一度ずつ訪問して出発地に戻る際の、総移動距離が最短となる経路を求める問題。都市数がn個の場合、可能な経路は(n-1)!/2通りあり、都市数の増加に対して計算量が指数関数的に増大するNP困難問題。厳密解法、近似解法、メタヒューリスティクスなど様々な解法が研究されている。配送計画、回路設計、スケジューリングなど実社会の多くの最適化問題に応用され、アルゴリズム研究の重要なベンチマーク問題となっている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-05T14:29:06.502Z'
+      stability: 16.1507
+      difficulty: 6.4414
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 21
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:29:06.502Z'
   - term: A*探索アルゴリズム
     description: グラフ探索において、スタートからゴールまでの最短経路を効率的に見つけるヒューリスティック探索アルゴリズム。評価関数f(n) = g(n) + h(n)を用いて探索を行い、g(n)はスタートから現在地までの実コスト、h(n)は現在地からゴールまでの推定コスト（ヒューリスティック関数）を表す。ヒューリスティック関数が許容的（実際の値以下）であれば最適解が保証される。ダイクストラ法より高速で、ゲームのキャラクター移動、カーナビの経路検索、ロボットの経路計画などに広く応用されている。経路探索アルゴリズムの代表格として重要な技術。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:31:10.054Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:31:10.054Z'
   - term: 同期回路と非同期回路
     description: デジタル回路の動作制御方式による分類。同期回路はクロック信号によって全ての回路要素が一斉に動作するため、予測可能で安定した動作が特徴で、設計が比較的簡単なため広く採用されている。一方、非同期回路はクロック信号を使わず、各要素が独立して動作するため設計は複雑だが、低消費電力かつ高速動作が可能。同期回路は信頼性と設計のしやすさから商用製品で主流だが、非同期回路は省エネルギーが重要なモバイルデバイスやセンサーネットワークで活用されている。両者の長所を組み合わせたGALS（大域非同期・局所同期）方式も存在する。
     miss_count: 0
