@@ -1,20 +1,20 @@
 version: FSRS-v6
-created: '2025-06-14T12:25:31.117Z'
-updated: '2025-06-14T12:25:31.414Z'
+created: '2025-06-14T13:19:32.501Z'
+updated: '2025-06-14T13:19:32.898Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T13:19:30.753Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T13:19:30.753Z'
   - term: ランサムウェア
     description: コンピュータ内のファイルを暗号化し、復号と引き換えに身代金（Ransom）を要求する悪意のあるソフトウェア（マルウェア）。感染すると重要なデータにアクセスできなくなり、業務停止や情報漏洩などの深刻な被害をもたらす。感染経路は主に不正メール、脆弱性のあるVPN機器、リモートデスクトップなど。近年はRaaS（Ransomware as a Service）により技術知識のない犯罪者でも攻撃可能になっている。対策としてはデータバックアップ、セキュリティソフト導入、システム更新などが重要。
     miss_count: 0
@@ -825,80 +825,80 @@ terms:
     description: プログラムの実行を中断し、後で同じ場所から再開できるサブルーチンの一般化。従来の関数が呼び出しと復帰のみを行うのに対し、コルーチンは中断（suspend）と再開（resume）をサポートする。非同期処理やジェネレータ、協調的マルチタスクの実装に使用され、スレッドよりも軽量で効率的な並行処理を提供する。Pythonのasync/await、C++20のco_await/co_yield、Unityのyield returnなど、多くの言語や環境で実装されている。シングルスレッド内で動作するため、メモリ共有の問題を避けながら複数の処理を効率的に管理できる。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T00:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T12:27:50.891Z'
+      stability: 0.2172
+      difficulty: 8.1514
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
-      lapses: 0
-      state: 0
-      last_review: null
+      scheduled_days: 1
+      reps: 1
+      lapses: 1
+      state: 1
+      last_review: '2025-06-14T12:27:50.891Z'
   - term: 疑似逆行列
     description: 正方行列でない、または特異行列に対して定義される逆行列の一般化で、ムーア・ペンローズ逆行列とも呼ばれる。行列Aの疑似逆行列A⁺は、4つのムーア・ペンローズ条件を満たす唯一の行列として定義される。最小二乗法の解を求める際に使用され、過決定系（方程式の数が未知数より多い）の問題で最適解を提供する。特異値分解（SVD）を用いて計算され、A⁺ = VΣ⁺Uᵀで表現される。線形回帰、画像処理、制御工学、機械学習など幅広い分野で、解が存在しないか無数に存在する連立方程式の近似解を求めるために利用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T00:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T12:34:51.886Z'
+      stability: 0.2172
+      difficulty: 8.1514
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
-      lapses: 0
-      state: 0
-      last_review: null
+      scheduled_days: 1
+      reps: 1
+      lapses: 1
+      state: 1
+      last_review: '2025-06-14T12:34:51.886Z'
   - term: セマフォ
     description: 並行プログラミングにおいて、複数のプロセスやスレッド間で共有資源への排他制御と同期を行う同期プリミティブ。エドガー・ダイクストラが1960年代に考案し、鉄道の信号機になぞらえて命名された。整数値のカウンタとして実装され、P操作（wait）でカウンタを減らし、V操作（signal）でカウンタを増やす。バイナリセマフォ（0と1のみ）とカウンティングセマフォ（任意の非負整数）に分類され、前者は排他制御、後者は資源の数量管理に使用される。デッドロックの原因となりやすいため、現在はミューテックスと条件変数の組み合わせがより推奨される傾向にある。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T00:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T12:54:50.232Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-14T12:54:50.232Z'
   - term: ブロックチェーン
     description: 取引データを暗号技術によってブロック単位でまとめ、それらを鎖状に連結することで改ざん耐性のある分散台帳を実現する技術。2008年にサトシ・ナカモトによってビットコインの基盤技術として提案された。各ブロックには前のブロックのハッシュ値が含まれ、データを改ざんすると後続のすべてのブロックの整合性が崩れる仕組みを持つ。P2Pネットワーク上で複数のノードが同一の台帳を分散保持し、コンセンサスアルゴリズムによって合意形成を行う。中央管理者が不要で単一障害点がなく、透明性と信頼性を提供するため、金融、サプライチェーン、デジタルアイデンティティなど多様な分野での応用が期待されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T00:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T13:04:11.757Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T13:04:11.757Z'
   - term: ステッピングモーター
     description: パルス信号に同期して一定の角度ずつ回転する電動機で、パルスモーターとも呼ばれる。入力パルス数に比例して回転角度が決まり、パルス周波数に比例して回転速度が制御される。基本ステップ角度は構造により決まり、2相では1.8°、5相では0.72°が一般的である。PM型（永久磁石型）、VR型（可変リラクタンス型）、HB型（ハイブリッド型）に分類される。位置センサを使わずにオープンループ制御で正確な位置決めが可能で、停止時も保持トルクを維持する。プリンター、CNCマシン、ロボット、時計など精密な位置決めが必要な機器で広く使用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T00:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T13:14:40.955Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-14T13:14:40.955Z'
   - term: 力制御
     description: ロボットや機械システムにおいて、対象物との接触時に発生する力を適切に管理・調整する制御技術。力覚センサやトルクセンサを用いて実際の接触力を検出し、目標値との偏差に基づいてフィードバック制御を行う。インピーダンス制御（力学特性を変更）とアドミタンス制御（力に応じて動作を調整）に大別される。位置制御と組み合わせたハイブリッド制御により、精密な作業と安全性を両立させる。研磨・バリ取り作業、精密組立、人間との協働作業など、力加減が重要な用途で必須の技術となっており、協働ロボットの安全機能としても重要な役割を果たしている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T00:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T13:15:43.760Z'
+      stability: 0.2172
+      difficulty: 8.1514
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
-      lapses: 0
-      state: 0
-      last_review: null
+      scheduled_days: 1
+      reps: 1
+      lapses: 1
+      state: 1
+      last_review: '2025-06-14T13:15:43.760Z'
   - term: 正規言語と正規表現
     description: 正規言語は、決定性有限オートマトンによって受理可能な形式言語であり、チョムスキー階層において最も制約の厳しい言語クラスです。正規表現は、正規言語を一つの文字列で表現する方法で、文字列のパターンマッチングや検索に広く使用されます。正規表現では、基本的な文字、選択(|)、連結、反復(*)などの演算を組み合わせて複雑なパターンを記述できます。現在では、プログラミング言語やテキストエディタ、検索エンジンなど様々な分野で活用されており、文字列処理において不可欠な技術となっています。理論計算機科学においては、正規言語と正規表現の表現能力は等価であることが証明されています。
     miss_count: 0
