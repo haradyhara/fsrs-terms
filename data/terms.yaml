@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-06-14T13:28:05.542Z'
-updated: '2025-06-14T13:28:06.072Z'
+created: '2025-06-14T14:06:18.510Z'
+updated: '2025-06-14T14:06:18.944Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -84,67 +84,67 @@ terms:
     description: 信号や画像データを時間と周波数の両方の情報を保持したまま解析する数学的手法。フーリエ変換とは異なり、局所的な変化や非定常信号の解析に優れている。母ウェーブレット（マザーウェーブレット）をスケール変換・平行移動させながら信号との内積を計算する。連続ウェーブレット変換（CWT）と離散ウェーブレット変換（DWT）がある。音声処理、画像圧縮（JPEG2000）、医療信号解析（脳波・心電図）、地震波解析などの分野で広く活用されている信号処理の重要技術。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T13:29:35.817Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-14T13:29:35.817Z'
   - term: クロスサイトスクリプティング（XSS）
     description: Webアプリケーションの脆弱性を悪用し、悪意のあるスクリプトを他のユーザーのブラウザで実行させる攻撃手法。攻撃者が入力フォームや掲示板に不正なスクリプトを埋め込み、それを閲覧したユーザーの個人情報を盗取したり、セッションを乗っ取ったりする。反射型XSS、格納型XSS、DOM Based XSSの3種類がある。対策としてはサニタイジング（入力値の無害化）、入力値制限、WAF導入などが有効。Webセキュリティにおいて最も頻繁に発見される脆弱性の一つ。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T13:32:46.398Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T13:32:46.398Z'
   - term: サロゲートデータ法
     description: 時系列データの統計的特徴を調べるための仮説検定手法。元データと同じ統計的性質（パワースペクトルなど）を持つが位相をランダム化したサロゲート（代理）データを多数生成し、元データの特徴量と比較する。データに非線形性やカオス性があるかを統計的に判定できる。脳波解析、心電図解析、金融データ解析などで、見た目だけでは判断できないデータの隠れた規則性や複雑性を科学的に検証するために使用される。ノイズと信号の判別にも有効な解析手法。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T13:56:39.923Z'
+      stability: 0.2172
+      difficulty: 8.1514
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
-      lapses: 0
-      state: 0
-      last_review: null
+      scheduled_days: 1
+      reps: 1
+      lapses: 1
+      state: 1
+      last_review: '2025-06-14T13:56:39.923Z'
   - term: TCPウィンドウ制御
     description: TCP通信において、受信側のバッファ容量に応じて送信データ量を制御するフロー制御メカニズム。ウィンドウサイズ（一度に送信可能なデータ量）を動的に調整することで、確認応答（ACK）を待たずに複数のセグメントを連続送信でき、通信効率を大幅に向上させる。スライディングウィンドウ方式により、受信側の処理能力に合わせてリアルタイムでウィンドウサイズを変更する。ネットワークの帯域を有効活用し、データの取りこぼしを防ぐインターネット通信の基盤技術。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T14:05:39.806Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-14T14:05:39.806Z'
   - term: ひずみゲージ
     description: 物体の微小な変形（ひずみ）を電気信号として検出する力学的センサー。薄い絶縁体上にジグザグ状の金属抵抗体を配置した構造で、対象物の伸縮に伴う抵抗値変化を測定してひずみ量に換算する。測定精度が高く、応答性に優れ、多点同時測定が可能。構造物の応力測定、材料試験、荷重計やトルクセンサの受感素子として使用される。航空機、鉄道、建築、医療機器など幅広い分野で安全性確保と品質管理に不可欠な計測技術。体重計やデジタルはかりにも応用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T14:06:17.216Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T14:06:17.216Z'
   - term: SLAM
     description: Simultaneous Localization and Mappingの略で、移動体が未知環境において自己位置推定と環境地図作成を同時に行う技術。センサー（LiDAR、カメラ、IMUなど）から得られる情報を基に、自分がどこにいるかを推定しながら周囲の地図を構築する。自動運転車、お掃除ロボット、ドローン、AGV（無人搬送車）、AR/VRシステムなどで広く活用されている。Visual SLAM、LiDAR SLAM、RGB-D SLAMなど使用センサーにより分類される。ロボットや自律移動システムの基盤技術として重要。
     miss_count: 0
