@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-06-14T13:19:32.501Z'
-updated: '2025-06-14T13:19:32.898Z'
+created: '2025-06-14T13:28:05.542Z'
+updated: '2025-06-14T13:28:06.072Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -19,67 +19,67 @@ terms:
     description: コンピュータ内のファイルを暗号化し、復号と引き換えに身代金（Ransom）を要求する悪意のあるソフトウェア（マルウェア）。感染すると重要なデータにアクセスできなくなり、業務停止や情報漏洩などの深刻な被害をもたらす。感染経路は主に不正メール、脆弱性のあるVPN機器、リモートデスクトップなど。近年はRaaS（Ransomware as a Service）により技術知識のない犯罪者でも攻撃可能になっている。対策としてはデータバックアップ、セキュリティソフト導入、システム更新などが重要。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-05T13:19:55.426Z'
+      stability: 16.1507
+      difficulty: 6.4414
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 21
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T13:19:55.426Z'
   - term: LR構文解析
     description: コンパイラで使用される構文解析手法の一つで、Left-to-right scanning, Rightmost derivationの略。入力を左から右に読み、最右導出により構文木を構築する。決定性有限オートマトンと構文解析表を用いて効率的に解析を行う。多くのプログラミング言語の文法はLR(1)で表現可能で、yacc/bisonなどのパーサジェネレータで広く利用されている。LL法と比べて扱える文法の範囲が広く、エラー検出も高速だが、エラーメッセージの生成が難しいという特徴がある。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T13:25:47.994Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-14T13:25:47.994Z'
   - term: ラウス・フルビッツの安定判別法
     description: 制御工学において、システムの安定性を特性方程式の係数のみから判別する手法。特性方程式を直接解くことなく、ラウス表（係数配列）の第一列の符号変化を調べることで不安定極の個数を判定できる。フルビッツ行列式を用いる方法もある。19世紀に考案された古典的手法だが、複雑な高次システムでも比較的簡単に安定性を確認できるため、制御系設計の基本ツールとして現在でも重要。ロボット制御や自動制御システムの安全性確保に不可欠な技術。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-15T13:27:12.763Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-14T13:27:12.763Z'
   - term: 順運動学と逆運動学
     description: ロボット工学における基本的な計算手法。順運動学（Forward Kinematics）は、関節角度や関節変位が与えられたときにエンドエフェクタ（手先）の位置と姿勢を求める計算。逆運動学（Inverse Kinematics）は、目標とするエンドエフェクタの位置と姿勢から必要な関節角度を求める計算。順運動学は比較的計算が簡単だが、逆運動学は複数解や解なしの場合があり複雑。ロボットアーム制御、歩行ロボット、CG分野での人体アニメーションなどで広く応用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T13:27:36.933Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T13:27:36.933Z'
   - term: 分割統治法
     description: 大きな問題を小さな部分問題に分割し、それらを個別に解決してから統合することで全体の問題を解決するアルゴリズム設計技法。英語ではDivide and Conquerと呼ばれる。典型例にはマージソート、クイックソート、フィボナッチ数計算などがある。再帰的なプログラム構造を用いることが多く、「分割→征服→統合」の3段階で問題を解決する。計算量の削減に効果的で、多くの効率的なアルゴリズムの基礎となっている。プログラミングだけでなく、一般的な問題解決手法としても広く応用される考え方。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-05T13:28:01.229Z'
+      stability: 16.1507
+      difficulty: 6.4414
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 21
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-14T13:28:01.229Z'
   - term: ウェーブレット変換
     description: 信号や画像データを時間と周波数の両方の情報を保持したまま解析する数学的手法。フーリエ変換とは異なり、局所的な変化や非定常信号の解析に優れている。母ウェーブレット（マザーウェーブレット）をスケール変換・平行移動させながら信号との内積を計算する。連続ウェーブレット変換（CWT）と離散ウェーブレット変換（DWT）がある。音声処理、画像圧縮（JPEG2000）、医療信号解析（脳波・心電図）、地震波解析などの分野で広く活用されている信号処理の重要技術。
     miss_count: 0
