@@ -1143,9 +1143,38 @@
 
                     const fileData = await response.json();
                     
-                    // Base64デコード
-                    const content = atob(fileData.content);
-                    const data = jsyaml.load(content);
+                    // Base64デコード（UTF-8対応）
+                    let content;
+                    try {
+                        // Base64をバイナリに変換
+                        const binaryString = atob(fileData.content);
+                        
+                        // バイナリをUint8Arrayに変換
+                        const bytes = new Uint8Array(binaryString.length);
+                        for (let i = 0; i < binaryString.length; i++) {
+                            bytes[i] = binaryString.charCodeAt(i);
+                        }
+                        
+                        // UTF-8として正しくデコード
+                        content = new TextDecoder('utf-8').decode(bytes);
+                        
+                    } catch (decodeError) {
+                        console.warn('UTF-8デコードでエラー、フォールバック処理を実行:', decodeError);
+                        // フォールバック: 従来の方法
+                        content = decodeURIComponent(escape(atob(fileData.content)));
+                    }
+
+                    // 制御文字や不正な文字をクリーンアップ
+                    content = this.cleanYAMLContent(content);
+
+                    let data;
+                    try {
+                        data = jsyaml.load(content);
+                    } catch (yamlError) {
+                        console.error('YAML解析エラー:', yamlError);
+                        console.log('問題のあるコンテンツ:', content.substring(0, 500));
+                        throw new Error(`YAML解析エラー: ${yamlError.message}`);
+                    }
 
                     return {
                         success: true,
@@ -1158,6 +1187,23 @@
                 } catch (error) {
                     throw new Error(`YAML読み込みエラー: ${error.message}`);
                 }
+            }
+
+            // YAMLコンテンツのクリーンアップ
+            cleanYAMLContent(content) {
+                // 制御文字（印刷不可能文字）を除去
+                content = content.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '');
+                
+                // BOMを除去
+                content = content.replace(/^\uFEFF/, '');
+                
+                // 不正なUTF-8シーケンスを置換
+                content = content.replace(/\uFFFD/g, '');
+                
+                // 改行の正規化
+                content = content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+                
+                return content;
             }
 
             // YAMLファイルの保存
@@ -1204,13 +1250,35 @@
                         }))
                     };
 
-                    const yamlString = jsyaml.dump(yamlData, {
-                        defaultFlowStyle: false,
-                        indent: 2
-                    });
+                    let yamlString;
+                    try {
+                        yamlString = jsyaml.dump(yamlData, {
+                            defaultFlowStyle: false,
+                            indent: 2,
+                            lineWidth: -1,
+                            noRefs: true,
+                            skipInvalid: true
+                        });
+                    } catch (yamlError) {
+                        throw new Error(`YAML生成エラー: ${yamlError.message}`);
+                    }
 
-                    // Base64エンコード
-                    const content = btoa(unescape(encodeURIComponent(yamlString)));
+                    // UTF-8エンコーディングを確実にする
+                    let content;
+                    try {
+                        // UTF-8 Uint8Arrayに変換
+                        const encoder = new TextEncoder();
+                        const utf8Bytes = encoder.encode(yamlString);
+                        
+                        // Uint8ArrayをBase64に変換
+                        const binaryString = Array.from(utf8Bytes, byte => String.fromCharCode(byte)).join('');
+                        content = btoa(binaryString);
+                        
+                    } catch (encodeError) {
+                        console.warn('UTF-8エンコードでエラー、フォールバック処理を実行:', encodeError);
+                        // フォールバック: 従来の方法
+                        content = btoa(unescape(encodeURIComponent(yamlString)));
+                    }
 
                     // コミットデータの準備
                     const commitData = {
@@ -1419,6 +1487,16 @@
                     this.saveToGitHub();
                 });
 
+                // YAML修復機能
+                document.getElementById('repairYamlBtn')?.addEventListener('click', () => {
+                    this.repairYamlFile();
+                });
+
+                // デバッグ機能
+                document.getElementById('debugBtn')?.addEventListener('click', () => {
+                    this.showDebugInfo();
+                });
+
                 // モード切り替え
                 document.getElementById('dictionaryMode').addEventListener('click', () => {
                     this.switchMode('dictionary');
@@ -1531,11 +1609,12 @@
 
                     const result = await this.github.testConnection();
                     
-                    alert(result.message);
+                    this.showNotification(result.message, 'success');
                     this.updateConnectionStatus();
                     
                 } catch (error) {
-                    alert(`接続エラー: ${error.message}`);
+                    console.error('接続テストエラー:', error);
+                    this.showNotification(`接続エラー: ${error.message}`, 'error');
                     this.github.isConnected = false;
                     this.updateConnectionStatus();
                 } finally {
@@ -1553,12 +1632,12 @@
                 this.github.branch = document.getElementById('mainBranch').value.trim() || 'main';
 
                 if (!this.github.token || !this.github.owner || !this.github.repo || !this.github.yamlPath) {
-                    alert('すべての必須項目を入力してください。');
+                    this.showNotification('すべての必須項目を入力してください', 'error');
                     return;
                 }
 
                 this.github.saveSettings();
-                alert('GitHub設定を保存しました。');
+                this.showNotification('GitHub設定を保存しました', 'success');
                 this.updateConnectionStatus();
                 this.closeGitHubSetup();
             }
