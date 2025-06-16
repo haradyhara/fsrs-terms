@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-06-14T15:44:10.484Z'
-updated: '2025-06-14T15:44:11.090Z'
+created: '2025-06-16T12:45:39.211Z'
+updated: '2025-06-16T12:45:39.719Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -305,80 +305,80 @@ terms:
     description: Thread Level Speculation（TLS）とも呼ばれる、プログラムの順次実行において、実際に独立しているかが不明な並列実行可能性の高いコード部分を投機的に並列実行する技術。主にループ処理で活用され、各反復を異なるスレッドで同時実行し、依存関係違反が検出された場合は実行を中止して再開する。ハードウェア支援によるメモリ監視により、順次実行の意味論的整合性を保持する。コンパイル時に完全な依存関係解析が困難な場合でも、実行時に動的に並列化を図ることができるため、プロセッサの計算能力を最大限活用できる。現代のマルチコアプロセッサにおいて自動並列化の重要な手法となっている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T12:41:54.321Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-16T12:41:54.321Z'
   - term: プロセスとスレッドの違い
     description: プロセスは実行中のプログラムの実体で、独立したメモリ空間、コード領域、データ領域を持つ。OSが管理し、他のプロセスとメモリを共有しないため安全性が高い。スレッドはプロセス内の実行単位で、同一プロセス内のスレッド間ではメモリ空間（ヒープ）を共有するが、それぞれ独自のスタックとレジスタを持つ。プロセス間通信にはIPCやパイプが必要だが、スレッド間では直接メモリ共有が可能。プロセス生成はオーバーヘッドが大きいが、スレッド生成は軽量。プロセスクラッシュは他プロセスに影響しないが、スレッドクラッシュはプロセス全体に影響する可能性がある。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-19T12:41:55.588Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-16T12:41:55.588Z'
   - term: 中心極限定理
     description: 統計学における基本定理で、母集団の分布形状に関係なく、標本サイズが大きくなるにつれて標本平均の分布が正規分布に近づくという法則。独立同一分布に従う確率変数の和や平均は、変数の数が増加すると母集団の分布形状によらず正規分布に収束する。一般的に標本サイズが30以上で効果が現れる。この定理により、複雑な分布を持つデータでも標本平均を用いた統計的推測が可能になり、区間推定や仮説検定の理論的基盤となっている。世論調査、品質管理、金融分析など幅広い分野で応用される統計学の中核的概念。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-19T12:41:56.877Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-16T12:41:56.877Z'
   - term: FPGA
     description: Field Programmable Gate Array（フィールドプログラマブルゲートアレイ）の略で、製造後にユーザーが自由に論理回路を設計・変更できる集積回路。CLB（Configurable Logic Block）と呼ばれるプログラム可能な論理ブロックと、それらを接続する配線リソースで構成される。HDL（Hardware Description Language）でプログラムを記述し、専用ツールで論理合成してビットストリームとしてFPGAに転送する。ASIC開発の前段階でのプロトタイピング、高速信号処理、リアルタイム制御、機械学習アクセラレータなどに活用される。設計変更が容易で開発期間を短縮でき、少量生産に適している。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-19T12:42:00.375Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-16T12:42:00.375Z'
   - term: 受動歩行
     description: アクチュエータ、センサ、制御システムを一切使用せず、機械の持つ固有のダイナミクスと重力の相互作用のみによって実現される歩行現象。1990年にMcGeerによって初めて実機で実証された。緩やかな下り坂で歩行機を押し出すだけで、自然で人間に近い歩容での安定した歩行が可能。エネルギー効率が極めて高く、歩行の力学的原理を理解する上で重要な研究分野となっている。受動歩行の原理を応用することで、より効率的で自然な二足歩行ロボットの開発が進められており、制御理論とロボット工学の発展に大きな影響を与えている革新的な概念。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-17T12:42:02.252Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-16T12:42:02.252Z'
   - term: 値渡しと参照渡し
     description: プログラミングにおける関数への引数の渡し方の分類。値渡し（Call by Value）は変数の値をコピーして関数に渡すため、関数内で仮引数を変更しても実引数（呼び出し元の変数）には影響しない。参照渡し（Call by Reference）は変数のメモリアドレスを渡すため、関数内での変更が実引数に反映される。C言語は基本的に値渡しだが、ポインタを使って参照渡し的な動作を実現できる。多くの現代的言語（Java、Python等）は「オブジェクト参照の値渡し」を採用しており、オブジェクトへの参照を値として渡す。プログラムの安全性、効率性、意図した動作の実現において重要な概念。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-19T12:42:03.976Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-16T12:42:03.976Z'
   - term: 自己相関関数とパワースペクトル
     description: 自己相関関数は信号が時間的にずらした自分自身とどれだけ類似しているかを測る関数で、信号の周期性やパターンを検出するのに使用される。数式では信号x(t)とτだけ遅延させた信号x(t+τ)の相関を計算する。パワースペクトルは信号の周波数成分ごとの電力分布を表す関数で、どの周波数成分が強いかを示す。ウィーナー・ヒンチンの定理により、自己相関関数とパワースペクトルはフーリエ変換の関係にあり、数学的に同等の情報を持つ。音響工学、通信工学、信号処理分野で信号の特性解析や雑音除去、周期性検出に広く活用されている。
     miss_count: 0
