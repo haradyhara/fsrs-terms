@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-06-24T12:02:51.588Z'
-updated: '2025-06-24T12:02:52.094Z'
+created: '2025-06-24T12:07:15.958Z'
+updated: '2025-06-24T12:07:16.848Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -409,93 +409,93 @@ terms:
     description: プログラムがメモリ上に確保されたバッファ（一時記憶領域）の境界を超えてデータを書き込むことで発生するセキュリティ脆弱性。主にC/C++等の手動メモリ管理言語で起こりやすく、攻撃者が意図的に長いデータを送信することで、隣接するメモリ領域を上書きし、プログラムのクラッシュや任意コード実行を引き起こす可能性がある。スタックベースとヒープベースの2種類があり、前者は特に危険性が高い。対策には入力値検証、セキュアプログラミング、ASLR（アドレス空間配置のランダム化）、スタックカナリアなどがある。情報セキュリティにおける代表的な攻撃手法の一つ。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-27T12:03:37.110Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-24T12:03:37.110Z'
   - term: 実行時コンパイラ
     description: JITコンパイラ（Just-In-Time Compiler）とも呼ばれる、プログラム実行時にソースコードや中間コードを機械語にコンパイルする技術。「必要なものを必要な時に」コンパイルすることから名付けられた。事前コンパイルと比較して、実行環境に応じた最適化が可能で、プラットフォーム非依存のソースコードや中間コードで配布できる利点がある。JavaのHotSpot技術や.NETフレームワークで活用され、実行時にプロファイリング情報を基に動的最適化を行う。コンパイル時間がオーバーヘッドとなるが、適応的コンパイルにより繰り返し実行される部分のみをコンパイルして効率化を図る。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-27T12:04:16.539Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-06-24T12:04:16.539Z'
   - term: SIMD（Single Instruction Multiple Data）
     description: 1つの命令で複数のデータを同時に処理する並列処理技術。フリンの分類における4つのコンピュータアーキテクチャの一つで、同一の演算を複数のデータに対して並列実行することで処理速度を向上させる。Intel SSE/AVX、ARM NEONなどの拡張命令セットで実装され、画像処理、音声処理、3Dグラフィックス、科学計算などの分野で威力を発揮する。ベクトル演算やベクトル処理とも呼ばれ、GPUでも広く活用されている。例えば4つの画素に同じフィルタ処理を適用する場合、従来は4回の命令が必要だったが、SIMDでは1回の命令で並列処理できる。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-25T12:04:47.208Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-24T12:04:47.208Z'
   - term: BNF
     description: Backus-Naur Formの略で、プログラミング言語の文法を定義するためのメタ言語（言語を記述するための言語）。1960年代にALGOL 60の文法定義のためにジョン・バッカスとピーター・ナウアが考案した。文脈自由文法を表現し、::=（定義）、|（選択）、<>（非終端記号）などの記号を用いて構文規則を記述する。再帰的定義により複雑な文法構造も表現でき、現在でもプログラミング言語の仕様書やパーサジェネレータで広く使用されている。EBNF（拡張BNF）では繰り返しやオプションを表現する記号が追加され、より簡潔な記述が可能となっている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-25T12:05:25.041Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-24T12:05:25.041Z'
   - term: 自動運転車システムにおけるダイナミックマップ
     description: 自動運転車が使用する高精度3次元地図に、渋滞情報や事故による通行規制などの動的情報を統合したデジタル地図。静的情報（路面・車線・構造物）、準静的情報（交通規制・工事予定）、準動的情報（事故・渋滞）、動的情報（歩行者・対向車）の4層構造で構成される。cm単位の精度を持つ基盤地図により、車載センサーだけでは検知困難な遠方の道路状況を事前に把握でき、悪天候時の安定した自動運転を可能にする。日本ではダイナミックマップ基盤株式会社が整備を進めており、レベル3以上の自動運転実現に不可欠な情報インフラとして重要な役割を果たしている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-25T12:06:10.633Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-24T12:06:10.633Z'
   - term: サーバーのスケールアウトとスケールアップ
     description: サーバーの処理能力向上を図る2つの異なるアプローチ。スケールアップ（垂直スケーラビリティ）は単一サーバーのCPU、メモリ、ストレージなどのスペックを向上させる手法で、設計変更が不要で管理が簡単だが、ハードウェアの物理的限界がある。スケールアウト（水平スケーラビリティ）は複数台のサーバーを並列に配置して負荷分散を行う手法で、理論上無限に拡張可能で可用性も高いが、システム設計が複雑になる。データベースなど整合性が重要なシステムではスケールアップが、Webサーバーなど並列処理可能なシステムではスケールアウトが適している。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-25T12:06:43.360Z'
+      stability: 0.2172
+      difficulty: 8.1514
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
-      lapses: 0
-      state: 0
-      last_review: null
+      scheduled_days: 1
+      reps: 1
+      lapses: 1
+      state: 1
+      last_review: '2025-06-24T12:06:43.360Z'
   - term: MinMax法
     description: ミニマックス法とも呼ばれる、2人零和ゲームにおいて最適な戦略を決定するゲーム理論のアルゴリズム。自分の手番では利得を最大化（Max）し、相手の手番では損失を最小化（Min）するという原理に基づく。将棋、チェス、オセロなどの完全情報ゲームのAI思考エンジンで広く使用される。ゲーム木を構築し、葉ノードから根ノードへ向かって評価値を伝播させることで最適手を決定する。計算量削減のためα-β法と組み合わせることが多い。「相手が最善手を打ってきた場合でも、自分にとって最もマシな結果となる手」を選択するという考え方で、リスクを最小化する保守的な戦略となる。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T07:54:07.306Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-06-25T12:07:10.605Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-06-24T12:07:10.605Z'
   - term: プロシージャルモデリング
     description: アルゴリズムや数式に基づいて3Dモデルを自動生成する技術。手続き型（プロシージャル）の処理により、パラメータやルールを設定することで大量のバリエーションを持つモデルを効率的に作成できる。都市の街並み、自然の景観、建築物などの生成に特に有効で、修正時もパラメータ変更だけで全体に反映される柔軟性を持つ。Houdini、Blenderのジオメトリノードなどのソフトウェアで実装され、ゲーム開発、映像制作、建築設計で活用されている。手作業によるモデリングと比較して、大規模環境の制作効率が飛躍的に向上し、リアルタイム生成やプロトタイピングにも適している。
     miss_count: 0
