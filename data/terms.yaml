@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-07-01T06:49:37.705Z'
-updated: '2025-07-01T06:49:38.372Z'
+created: '2025-07-01T07:40:08.003Z'
+updated: '2025-07-01T07:40:08.739Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -682,106 +682,106 @@ terms:
     description: コンピュータビジョンにおいて、平面を射影変換によって別の平面に変換する幾何学的変換技術。任意の四角形から任意の四角形への変換が可能で、アフィン変換では実現できない台形のような変形も扱える。3×3の同次変換行列で表現され、8個の未知パラメータを持つ。書類や名刺を斜めから撮影した画像を正面から見たように補正したり、画像間の対応点から幾何学的関係を推定する際に使用される。画像合成、パノラマ作成、拡張現実（AR）、カメラキャリブレーションなどの応用分野で重要な技術として活用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T10:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-02T06:50:59.685Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-01T06:50:59.685Z'
   - term: ARP（Address Resolution Protocol）
     description: TCP/IPネットワークにおいて、IPアドレスから対応するMACアドレスを動的に発見するためのプロトコル。データリンク層（OSI第2層）で動作し、同一ネットワーク内のデバイス間通信を可能にする。ホストがIPアドレスを知っているがMACアドレスが不明な場合、ARPリクエストをブロードキャストで送信し、該当するデバイスがARPリプライで自身のMACアドレスを返答する。取得した情報はARPテーブルにキャッシュされ、一定時間保持される。1982年にRFC 826で定義された古典的だが重要なプロトコルで、IPv6ではNDP（Neighbor Discovery Protocol）が同様の機能を提供する。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T10:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-02T06:53:30.097Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-01T06:53:30.097Z'
   - term: スーパスカラとスーパーパイプライン
     description: CPUの高速化技術における2つの異なるアプローチ。スーパスカラは複数のパイプライン処理回路を並列に配置し、独立した複数の命令を同時に実行することで性能向上を図る技術。一方、スーパーパイプラインは通常のパイプライン段階をより細かく分割し、各段階の処理時間を短縮することで高いクロック周波数での動作を可能にする技術。スーパスカラは並列性重視、スーパーパイプラインは高周波数動作重視という特徴がある。現代のCPUでは両方の技術を組み合わせて使用することが一般的。命令レベル並列性の向上によりCPU性能を大幅に改善する重要な技術群。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T10:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-02T06:55:52.594Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-01T06:55:52.594Z'
   - term: 勾配降下法
     description: 機械学習における基本的な最適化アルゴリズム。損失関数（コスト関数）の最小値を見つけるため、現在位置における勾配（偏微分）の方向と反対方向にパラメータを更新していく手法。学習率と呼ばれるハイパーパラメータで更新幅を制御する。バッチ勾配降下法（全データ使用）、確率的勾配降下法（SGD、1サンプルずつ）、ミニバッチ勾配降下法（小さなバッチ単位）などの種類がある。局所最適解に陥りやすい問題があるため、モメンタム、AdaGrad、Adamなどの改良版が開発されている。ニューラルネットワークをはじめとする機械学習モデルの学習において中核的な役割を果たす。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T10:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-02T06:59:30.376Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-01T06:59:30.376Z'
   - term: 深層学習
     description: ディープラーニングとも呼ばれる、多層のニューラルネットワークを用いた機械学習手法。3層以上（一般的には4層以上）の隠れ層を持つディープニューラルネットワーク（DNN）により、データの階層的な特徴表現を自動的に学習する。従来の機械学習では人間が特徴量を設計する必要があったが、深層学習では生データから自動的に特徴を抽出できる。画像認識（CNN）、自然言語処理（RNN、Transformer）、音声認識などで革新的な成果を実現。2012年のAlexNetによる画像認識性能向上を契機に現在のAIブームを牽引している。大量のデータと高い計算能力を要求するが、人間の認識能力を超える精度を多くの分野で達成している。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T10:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-02T07:03:24.181Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-01T07:03:24.181Z'
   - term: 強化学習
     description: エージェントが環境との相互作用を通じて、試行錯誤により最適な行動方策を学習する機械学習の手法。教師あり学習、教師なし学習と並ぶ機械学習の3つの基本パラダイムの一つ。エージェントが状態を観察し、行動を選択し、環境から報酬（または罰）を受け取るサイクルを繰り返すことで、累積報酬を最大化する方針を学習する。AlphaGoやゲームAI、ロボット制御、自動運転、推薦システムなどで成功を収めている。Q学習、方策勾配法、Actor-Criticなどのアルゴリズムがあり、深層学習と組み合わせた深層強化学習（DQN、PPO等）により複雑な問題も解決可能。探索と活用のバランスが重要な課題となる。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T10:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-02T07:20:52.538Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-01T07:20:52.538Z'
   - term: GAN（敵対生成ネットワーク）
     description: Generative Adversarial Networkの略で、2014年にイアン・グッドフェローによって提案された生成モデル。生成器（Generator）と識別器（Discriminator）という2つのニューラルネットワークを競わせながら学習させる敵対的学習の仕組み。生成器は本物に近い偽データを作成し、識別器はそれが本物か偽物かを判別する。この競争により、最終的に本物と区別がつかないほどリアルなデータを生成できるようになる。画像生成、動画作成、音声合成、データ拡張などに活用される。DCGAN、StyleGAN、CycleGANなど多くの派生手法が開発され、クリエイティブAIや生成AIの発展に大きく貢献している革新的技術。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T10:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-02T07:35:52.163Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-01T07:35:52.163Z'
   - term: RNN
     description: Recurrent Neural Network（再帰型ニューラルネットワーク）の略で、時系列データや可変長の系列データを処理するためのニューラルネットワーク。隠れ層の出力を次の時刻の入力として再利用する再帰的な構造により、過去の情報を記憶しながら処理を行う。自然言語処理、音声認識、時系列予測などで活用される。基本的なRNNは勾配消失問題により長期依存関係の学習が困難だったが、LSTM（Long Short-Term Memory）やGRU（Gated Recurrent Unit）などの改良版により解決された。Transformerの登場により一部の用途は置き換えられているが、連続値の時系列データ処理では依然として重要な技術として使用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-13T10:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-02T07:40:01.691Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-01T07:40:01.691Z'
   - term: 誤差逆伝播法
     description: ニューラルネットワークの学習における基本的なアルゴリズムで、損失関数の勾配を効率的に計算する手法。出力層から入力層に向かって誤差情報を逆向きに伝播させることで、各層の重みとバイアスに対する偏微分を求める。チェーンルール（連鎖律）を用いて合成関数の微分を段階的に計算し、勾配降下法により重みを更新する。計算グラフを用いることで複雑なネットワーク構造でも系統的に勾配計算が可能となる。ディープラーニングの中核技術として、多層パーセプトロンから畳み込みニューラルネットワークまで広く使用されている。
     miss_count: 0
