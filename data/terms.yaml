@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-07-01T07:40:08.003Z'
-updated: '2025-07-01T07:40:08.739Z'
+created: '2025-07-05T13:57:52.722Z'
+updated: '2025-07-05T13:57:54.198Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -1137,28 +1137,28 @@ terms:
     description: 観測されない隠れた状態を持つマルコフ過程による確率モデル。直接観測できない状態系列から、観測可能な出力系列を生成する仕組みを持つ。音声認識、自然言語処理の品詞推定、バイオインフォマティクスにおける塩基配列解析などで広く活用される。前向きアルゴリズムやビタビアルゴリズムにより効率的な計算が可能で、複雑な時系列データのパターン認識において重要な役割を果たしている。近年はRNNなどの深層学習手法に一部置き換えられているが、解釈可能性の高さから依然として重要な技術である。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-06T13:57:25.750Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-05T13:57:25.750Z'
   - term: NATとNAPT
     description: NAT（Network Address Translation）はプライベートIPアドレスとグローバルIPアドレスを相互変換するネットワーク技術。IPv4アドレス枯渇問題の解決策として広く使用される。NAPT（Network Address Port Translation）はNATを拡張し、IPアドレスに加えてポート番号も変換することで、一つのグローバルIPアドレスで複数の内部端末の同時通信を可能にする。家庭用ルーターや企業のファイアウォールで標準実装されており、内部ネットワークのセキュリティ向上にも寄与する。IPv6普及までの重要な橋渡し技術として、現在のインターネットの基盤を支えている。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-06T13:57:51.672Z'
+      stability: 0.2172
+      difficulty: 8.1514
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
-      lapses: 0
-      state: 0
-      last_review: null
+      scheduled_days: 1
+      reps: 1
+      lapses: 1
+      state: 1
+      last_review: '2025-07-05T13:57:51.672Z'
   - term: ボリュームレンダリング
     description: 3次元の体積データ（ボクセル）を2次元画像として可視化するコンピュータグラフィックス技術。CTスキャンやMRI画像、科学シミュレーションデータなどの内部構造を透視的に表示できる。光線追跡法により各ピクセルに対して仮想光線を飛ばし、ボリューム内での光の吸収・散乱・発光を計算して最終的な色と透明度を決定する。医療画像診断、気象データ可視化、地質構造解析、流体シミュレーション可視化などで活用される。GPUの並列処理能力を活用したリアルタイムレンダリングも実現されており、VRやAR分野での応用も進んでいる。
     miss_count: 0
