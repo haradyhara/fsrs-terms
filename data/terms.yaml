@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-07-05T17:41:23.478Z'
-updated: '2025-07-05T17:41:24.023Z'
+created: '2025-07-07T21:22:59.291Z'
+updated: '2025-07-07T21:22:59.970Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -1176,28 +1176,28 @@ terms:
     description: CPU処理をGPU（Graphics Processing Unit）の並列処理能力を活用して高速化する技術。GPUは数千個のコアを持ち、同じ処理を大量のデータに並列適用するSIMD処理に優れている。機械学習の学習・推論、画像・動画処理、科学計算、暗号処理、データベース処理などで劇的な性能向上を実現する。CUDA、OpenCL、DirectComputeなどのプログラミングフレームワークにより実装される。ディープラーニングの発展を支える基盤技術として重要で、AI時代のコンピューティングパワーの向上に不可欠。近年はクラウドGPUサービスも普及し、幅広い分野で活用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-10T16:46:07.586Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-07-07T16:46:07.586Z'
   - term: ECL
     description: Emitter Coupled Logic（エミッタ結合論理）の略で、高速動作を目的とした論理回路ファミリ。トランジスタを飽和領域に入れずに電流スイッチング動作により論理演算を行うため、極めて高速な動作が可能。伝搬遅延時間が1ns以下と非常に短く、スイッチングノイズも少ない特徴を持つ。負電源と正電源の両方を必要とし、消費電力が大きいデメリットがある。1960年代から1980年代にかけて高速計算機やスーパーコンピュータで使用され、現在はCMOS技術の高速化により一般的用途では使用されなくなったが、極高速が要求される特殊な通信機器や測定器で依然として重要。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-08T21:22:55.277Z'
+      stability: 0.2172
+      difficulty: 8.1514
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
-      lapses: 0
-      state: 0
-      last_review: null
+      scheduled_days: 1
+      reps: 1
+      lapses: 1
+      state: 1
+      last_review: '2025-07-07T21:22:55.277Z'
   - term: 組み合わせ論理回路
     description: 現在の入力信号の組み合わせのみによって出力が一意的に決まるデジタル論理回路。内部に記憶機能を持たず、同じ入力に対して常に同じ出力を返す特徴がある。AND、OR、NOT、NAND、NORなどの基本論理ゲートから構成され、加算器、マルチプレクサ、デマルチプレクサ、エンコーダ、デコーダなどが代表例。順序回路と対比されることが多く、コンピュータの演算回路や制御回路の基本構成要素として不可欠。真理値表や論理式によって完全に記述でき、設計と解析が比較的容易である。
     miss_count: 0
