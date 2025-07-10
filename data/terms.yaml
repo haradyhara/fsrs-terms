@@ -1,6 +1,6 @@
 version: FSRS-v6
-created: '2025-07-07T21:22:59.291Z'
-updated: '2025-07-07T21:22:59.970Z'
+created: '2025-07-10T04:38:15.111Z'
+updated: '2025-07-10T04:38:15.636Z'
 terms:
   - term: RISC型とCISC型プロセッサ
     description: CPUの命令セット設計の2つの異なるアプローチ。RISC（Reduced Instruction Set Computer）は単純な命令セットで高速実行を重視し、主にモバイル機器や組み込みシステムで使用される（例：ARM）。CISC（Complex Instruction Set Computer）は複雑で多機能な命令セットを持ち、プログラムの記述を簡潔にできるが実行速度は比較的遅く、主にPC向けで使用される（例：x86）。RISCは省電力性に優れ、CISCは汎用性と互換性に優れるという特徴がある。
@@ -1202,93 +1202,93 @@ terms:
     description: 現在の入力信号の組み合わせのみによって出力が一意的に決まるデジタル論理回路。内部に記憶機能を持たず、同じ入力に対して常に同じ出力を返す特徴がある。AND、OR、NOT、NAND、NORなどの基本論理ゲートから構成され、加算器、マルチプレクサ、デマルチプレクサ、エンコーダ、デコーダなどが代表例。順序回路と対比されることが多く、コンピュータの演算回路や制御回路の基本構成要素として不可欠。真理値表や論理式によって完全に記述でき、設計と解析が比較的容易である。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-13T04:15:19.313Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-07-10T04:15:19.313Z'
   - term: イテレータ
     description: プログラミングにおいて、配列やリストなどのコレクションの要素に順次アクセスするための抽象的なインターフェースまたはオブジェクト。反復子とも呼ばれ、「最初の要素を指す」「次の要素に進む」「現在の要素を取得する」といった基本操作を提供する。コレクションの内部構造を隠蔽し、統一的なアクセス方法を提供することで、データ構造に依存しないプログラミングが可能。C++のSTL、JavaのIteratorインターフェース、Pythonのiterプロトコルなど、多くの言語で実装されており、for文やforeach文の内部機構としても使用される。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-13T04:16:05.766Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-07-10T04:16:05.766Z'
   - term: セルオートマトン
     description: 格子状に配置されたセル（細胞）が、周囲のセルとの局所的な相互作用に基づいて状態を時間的に変化させる計算モデル。各セルは有限個の離散状態を持ち、単純な規則に従って次の時刻の状態が決定される。1次元、2次元、高次元のモデルがあり、コンウェイの「ライフゲーム」が最も有名。複雑系の研究、物理現象のシミュレーション、パターン形成の解析、生命現象のモデル化などに活用される。簡単な規則から複雑で豊かな挙動が創発することで、自然界のメカニズム理解に重要な洞察を提供する。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-13T04:16:25.463Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-07-10T04:16:25.463Z'
   - term: P, NP, NP困難, NP完全
     description: 計算複雑性理論における問題クラスの重要な分類。Pは多項式時間で解ける判定問題の集合、NPは解の証明を多項式時間で検証できる問題の集合。NP困難は「NPの任意の問題と同等以上に難しい」問題、NP完全は「NPに属しかつNP困難」な問題を指す。P=NP問題は未解決で、ミレニアム懸賞問題の一つ。巡回セールスマン問題、ナップサック問題、充足可能性問題などがNP完全の代表例。実用的には、NP完全問題に対しては近似アルゴリズムやメタヒューリスティクスが用いられ、計算機科学と最適化理論の基盤概念として重要。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-11T04:17:42.307Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-10T04:17:42.307Z'
   - term: k近傍法
     description: 機械学習における教師あり学習アルゴリズムで、新しいデータポイントの分類や回帰を、最も近いk個の学習データの多数決や平均により決定する手法。1951年にFix and Hodgesによって提案され、ノンパラメトリックな手法として知られる。分類では多数決、回帰では平均値を用いる。距離の計算にはユークリッド距離やマンハッタン距離が使用される。kの値が小さいと過学習、大きいと汎化しすぎる傾向があり、交差検証によって最適値を決定する。シンプルで直感的な手法として、パターン認識や推薦システムで広く活用されている。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-13T04:18:40.312Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-07-10T04:18:40.312Z'
   - term: 公開鍵暗号方式の動作原理と認証局
     description: 暗号化と復号に異なる鍵を使用する暗号方式で、公開鍵で暗号化したデータは対応する秘密鍵でのみ復号可能。鍵配送問題を解決し、事前の鍵交換なしに安全な通信を実現する。RSA暗号や楕円曲線暗号が代表的。認証局（CA）は公開鍵の正当性を保証する第三者機関で、電子証明書を発行して公開鍵と所有者の関係を証明する。認証局は登録局、発行局、リポジトリに分かれ、厳格な本人確認を経て証明書を発行する。SSL/TLS通信や電子署名の基盤技術として、インターネットセキュリティに不可欠な役割を果たしている。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-11T04:37:16.599Z'
+      stability: 1.1771
+      difficulty: 7.5814
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 1
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 1
+      last_review: '2025-07-10T04:37:16.599Z'
   - term: 標的型メール攻撃
     description: 特定の企業や個人を狙って関係者を装った偽装メールを送信し、受信者に添付ファイルの開封やURLクリックを促してマルウェア感染を引き起こすサイバー攻撃手法。無差別型攻撃と異なり、攻撃対象に合わせて巧妙に偽装されているため発見が困難。感染後はネットワーク内部に侵入し、重要情報の窃取や更なる攻撃の足がかりとして利用される。送信者の偽装、日本語の自然さ、業務関連を装った件名など、受信者の油断を誘う特徴を持つ。セキュリティ教育、メールフィルタリング、エンドポイント保護などの多層防御が対策として重要。
     miss_count: 0
     fsrs:
-      due: '2025-06-14T08:00:00.000Z'
-      stability: 0
-      difficulty: 5
+      due: '2025-07-13T04:38:13.764Z'
+      stability: 3.2602
+      difficulty: 7.0114
       elapsed_days: 0
-      scheduled_days: 0
-      reps: 0
+      scheduled_days: 3
+      reps: 1
       lapses: 0
-      state: 0
-      last_review: null
+      state: 2
+      last_review: '2025-07-10T04:38:13.764Z'
   - term: 動的計画法
     description: 大きな問題を小さな部分問題に分割し、部分問題の解を記録・再利用することで効率的に全体の問題を解くアルゴリズム設計手法。1940年代にベルマンが考案し、Dynamic Programmingと呼ばれる。メモ化により同じ計算の重複を避け、指数時間から多項式時間への劇的な計算量削減を実現する。フィボナッチ数列、ナップサック問題、最長共通部分列問題、最短経路問題などが代表例。部分構造最適性と部分問題重複性が適用条件で、競技プログラミングや最適化問題の解法として広く用いられる重要なアルゴリズム技法。
     miss_count: 0
